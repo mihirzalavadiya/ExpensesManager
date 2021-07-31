@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5c5c5c</color>
+    <color name="colorPrimaryDark">#434343</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="splash_back">#2A6A6A</color>
+    <color name="submit">#940B21</color>
+    <color name="teal">#13988A</color>
+    <color name="tealLight">#46DACA</color>
+    <color name="cancel">#388E3C</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="blueGray">#647C90</color>
+    <color name="Ivory">#E2DED0</color>
+    <color name="btn_play_bg">#013B5A</color>
+    <color name="btn_bg">#FF5252</color>
+    <color name="splash_bg">#EDCA07</color>
+    <color name="toolbar_bg">#013B5A</color>
+    <color name="toolbarPrimaryDark">#01293F</color>
+    <color name="btn_text_color">#042226</color>
+    <color name="btn_stroke_color">#013B5A</color>
+    <color name="btn_stroke_color_selected">#99F1A245</color>
+    <color name="MediumSeaGreen">#3CB371</color>
+    <color name="LimeGreen">#32CD32</color>
+    <color name="DarkSlateGray">#2F4F4F</color>
+    <color name="DarkGray">#747676</color>
+    <color name="SeaGreen">#2E8B57</color>
+    <item name="blue" type="color">#FF33B5E5</item>
+    <item name="purple" type="color">#FFAA66CC</item>
+    <item name="green" type="color">#FF99CC00</item>
+    <item name="orange" type="color">#FFFFBB33</item>
+    <item name="red" type="color">#FFFF4444</item>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <item name="darkred" type="color">#FFCC0000</item>
+    <item name="White" type="color">#FFFFFF</item>
+    <color name="Black">#000000</color>
+    <color name="WhiteSmoke">#F5F5F5</color>
+    <color name="Silver">#dedede</color>
+
+    <color name="cobalt">#1F4191</color>
+    <color name="chocolate">#d26413</color>
+    <color name="arsenic">#213A3D</color>
+    <color name="amaranth">#FC0066</color>
+    <color name="deepskyblue">#1BBAEF</color>
+
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF80cbc4</color>
+    <color name="teal_700">#FF00796b</color>
+
+    <color name="light_blue_900">#FF039BE5</color>
+    <color name="light_blue_A200">#FF01579B</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+</resources>

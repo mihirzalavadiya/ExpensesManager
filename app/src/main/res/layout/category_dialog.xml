@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/deepskyblue">
+
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Category"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/cobalt"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@color/light_blue_A200"
+        android:layout_marginTop="8dp"></View>
+
+    <RadioGroup
+        android:id="@+id/radioCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radioIncome"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Income"
+            android:textColor="@color/cobalt"
+            android:textSize="16sp"
+            android:buttonTint="@color/cobalt"/>
+
+        <RadioButton
+            android:id="@+id/radioExpense"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Expense"
+            android:textSize="16sp"
+            android:textColor="@color/cobalt"
+            android:layout_marginLeft="32dp"
+            android:buttonTint="@color/cobalt"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Category Name"
+        android:textColor="@color/Black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:inputType="textCapWords"/>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="15dp"
+        android:letterSpacing="0.08"
+        android:textStyle="bold"
+        android:textColor="@color/WhiteSmoke"
+        android:background="@color/light_blue_A200"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

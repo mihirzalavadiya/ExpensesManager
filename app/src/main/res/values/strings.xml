@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Expenses Manager</string>
+    <string name="title_activity_category">CategoryActivity</string>
+    <string name="title_activity_payment_mode">PaymentModeActivity</string>
+    <string name="country_prompt">Choose a country</string>
+
+    <string-array name="month_arrays">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+</resources>
