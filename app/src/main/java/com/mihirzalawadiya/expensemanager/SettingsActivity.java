@@ -73,38 +73,33 @@ public class SettingsActivity extends AppCompatActivity {
         int minute = calendar.get(Calendar.MINUTE);
 
         TimePickerDialog timePickerDialog = new TimePickerDialog(this,
-                new TimePickerDialog.OnTimeSetListener() {
+                (view1, hourOfDay, minute1) -> {
 
-                    @Override
-                    public void onTimeSet(TimePicker view, int hourOfDay,
-                                          int minute) {
+                    Toast.makeText(SettingsActivity.this,"Reminder set for "+String.format("%02d", hourOfDay)
+                            + ":" + String.format("%02d", minute1),Toast.LENGTH_LONG).show();
 
-                        Toast.makeText(SettingsActivity.this,"Reminder set for "+String.format("%02d", hourOfDay)
-                                + ":" + String.format("%02d", minute),Toast.LENGTH_LONG).show();
+                    tvReminderTime.setText(String.format("%02d", hourOfDay)
+                            + ":" + String.format("%02d", minute1));
+                    //tvReminderTime.setText(hourOfDay + ":" + minute);
 
-                        tvReminderTime.setText(String.format("%02d", hourOfDay)
-                                + ":" + String.format("%02d", minute));
-                        //tvReminderTime.setText(hourOfDay + ":" + minute);
-
-                        Calendar temp = Calendar.getInstance();
-                        temp.set(Calendar.HOUR_OF_DAY,hourOfDay);
-                        temp.set(Calendar.MINUTE,minute);
+                    Calendar temp = Calendar.getInstance();
+                    temp.set(Calendar.HOUR_OF_DAY,hourOfDay);
+                    temp.set(Calendar.MINUTE, minute1);
 
 
-                        SharedPreferences.Editor editor = sharedPref.edit();
-                        editor.putInt("hour",temp.get(Calendar.HOUR_OF_DAY));
-                        editor.putInt("minute",temp.get(Calendar.MINUTE));
-                        editor.putInt("second",temp.get(Calendar.SECOND));
-                        editor.putBoolean("status",true);
-                        editor.apply();
+                    SharedPreferences.Editor editor = sharedPref.edit();
+                    editor.putInt("hour",temp.get(Calendar.HOUR_OF_DAY));
+                    editor.putInt("minute",temp.get(Calendar.MINUTE));
+                    editor.putInt("second",temp.get(Calendar.SECOND));
+                    editor.putBoolean("status",true);
+                    editor.apply();
 
-                        Intent intent1 = new Intent(SettingsActivity.this, AlarmReceiver.class);
-                        PendingIntent pendingIntent = PendingIntent.getBroadcast(SettingsActivity.this, 0, intent1, PendingIntent.FLAG_UPDATE_CURRENT);
-                        AlarmManager am = (AlarmManager) SettingsActivity.this.getSystemService(ALARM_SERVICE);
-                        assert am != null;
-                        am.setRepeating(AlarmManager.RTC_WAKEUP, temp.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
+                    Intent intent1 = new Intent(SettingsActivity.this, AlarmReceiver.class);
+                    PendingIntent pendingIntent = PendingIntent.getBroadcast(SettingsActivity.this, 0, intent1, PendingIntent.FLAG_UPDATE_CURRENT);
+                    AlarmManager am = (AlarmManager) SettingsActivity.this.getSystemService(ALARM_SERVICE);
+                    assert am != null;
+                    am.setRepeating(AlarmManager.RTC_WAKEUP, temp.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
 
-                    }
                 }, hour, minute, true);
         timePickerDialog.show();
 

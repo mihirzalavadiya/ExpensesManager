@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ExpenseManager.iml" filepath="$PROJECT_DIR$/.idea/modules/ExpenseManager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MPChartLib/ExpenseManager.MPChartLib.iml" filepath="$PROJECT_DIR$/.idea/modules/MPChartLib/ExpenseManager.MPChartLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ExpenseManager.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ExpenseManager.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ExpensesManager.iml" filepath="$PROJECT_DIR$/.idea/modules/ExpensesManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MPChartLib/ExpensesManager.MPChartLib.iml" filepath="$PROJECT_DIR$/.idea/modules/MPChartLib/ExpensesManager.MPChartLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ExpensesManager.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ExpensesManager.app.iml" />
     </modules>
   </component>
 </project>
