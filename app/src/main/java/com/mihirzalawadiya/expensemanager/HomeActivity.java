@@ -230,7 +230,7 @@ public class HomeActivity extends AppCompatActivity {
         // enable rotation of the chart by touch
         mChart.setRotationEnabled(true);
         mChart.setHighlightPerTapEnabled(true);
-        mChart.setHoleColor(getResources().getColor(R.color.DarkGray));
+        mChart.setHoleColor(getResources().getColor(R.color.arsenic));
 
 
         PieData data = new PieData(dataSet);
